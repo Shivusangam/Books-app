@@ -53,7 +53,7 @@ let searchBooks=async()=>{
 
     //get value of input box
     let bookname=document.querySelector('#searchBook').value
-    let searchdata=await fetch(`https://www.anapioficeandfire.com/api/books?page=5&pageSize=50&name=${bookname}`)
+    let searchdata=await fetch(`https://www.anapioficeandfire.com/api/books?page=1&pageSize=50&name=${bookname}`)
 
 let BookListInfo = await searchdata.json()
 
